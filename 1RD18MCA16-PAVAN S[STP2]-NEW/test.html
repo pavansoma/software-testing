@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///home/pavan/Documents/assignment2[stp]/test.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head><body bgcolor="skyblue"><b><h1 align="center">RV COLLEGE OF ENGINEERING</h1><br></b>
+<marque>
+    <img src="./test_files/rvce.jpg" height="120" align="left" width="100"><marquee></marquee></marque>
+  <title>test</title>
+
+  <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px; 1px solid gray; }
+
+  #draggable1 { width: 150px; height: 150px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px; 1px solid gray; }
+
+
+  #draggable2 { width: 150px; height: 150px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px; 1px solid gray; }
+
+  #draggable3 { width: 150px; height: 150px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px; }
+
+
+  #droppable { width: 200px; height: 200px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px;}
+
+  #droppable1 { width: 200px; height: 200px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px;}
+
+  #droppable2 { width: 200px; height: 200px; padding: 0.5em; float: center;  display: inline-block;
+      margin: 0 auto; padding: 3px;}
+
+  #droppable3 { width: 200px; height: 200px; padding: 0.5em; float: center;  display: inline-block;
+      margin: 0 auto; padding: 3px;}
+
+
+  </style>
+  <script src="./test_files/jquery-1.12.4.js"></script>
+  <script src="./test_files/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+	$( "#draggable1" ).draggable();
+	$( "#draggable2" ).draggable();
+  } );
+  </script>
+
+
+
+<table border="2px solid gray" cellpadding="3px" cellspacing="3px">
+<tbody align="center"><tr bordercolor="3px solid black">
+<td>
+<div id="draggable3">
+  <p>AVAILABLE ITEMS     TO DRAG</p>
+</div>
+</td>
+<td>
+<div id="draggable" class="ui-widget-content ui-draggable ui-draggable-handle" style="position: relative;">
+  <p>item 1</p>
+  <b><p>"RVCE"</p><b></b></b>
+</div>
+</td>
+
+ <td>
+ <div id="draggable1" class="ui-widget-content ui-draggable ui-draggable-handle" style="position: relative;">
+
+  <img src="./test_files/pavan.jpg" draggable="true" width="150px" height="150px">
+ </div>
+ </td>
+
+ <td>
+ <div id="draggable2" class="ui-widget-content ui-draggable ui-draggable-handle" style="position: relative;">
+  <p>item 3</p>
+  <b><p>"MCA DEPARTMENT"</p><b></b></b>
+</div>
+</td>
+</tr>
+
+
+<tr bordercolor="black">
+<td>
+<div id="droppable3">
+  <p>DROPPED ITEAM LIST</p>
+</div>
+</td>
+ <td>
+ <div id="droppable" class="ui-widget-content">
+
+</div>
+</td>
+
+<td>
+ <div id="droppable1" class="ui-widget-content">
+
+</div>
+</td>
+
+<td>
+ <div id="droppable2" class="ui-widget-content">
+
+</div>
+</td>
+</tr>
+</tbody></table>
+
+
+</body></html>

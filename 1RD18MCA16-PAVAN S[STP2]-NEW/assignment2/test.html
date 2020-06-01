@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>test</title>
+
+  <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px; 1px solid gray; }
+
+  #draggable1 { width: 150px; height: 150px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px; 1px solid gray; }
+
+
+  #draggable2 { width: 150px; height: 150px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px; 1px solid gray; }
+
+  #draggable3 { width: 150px; height: 150px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px; }
+
+
+  #droppable { width: 200px; height: 200px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px;}
+
+  #droppable1 { width: 200px; height: 200px; padding: 0.5em; float: center; display: inline-block;
+      margin: 0 auto; padding: 3px;}
+
+  #droppable2 { width: 200px; height: 200px; padding: 0.5em; float: center;  display: inline-block;
+      margin: 0 auto; padding: 3px;}
+
+  #droppable3 { width: 200px; height: 200px; padding: 0.5em; float: center;  display: inline-block;
+      margin: 0 auto; padding: 3px;}
+
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+	$( "#draggable1" ).draggable();
+	$( "#draggable2" ).draggable();
+  } );
+  </script>
+</head>
+<body>
+
+<table border="2px solid gray" cellpadding="2px" cellspacing="2px">
+<tr bordercolor="2px solid #000000">
+<td>
+<div id="draggable3" >
+  <p>ITEMS TO DRAG</p>
+</div>
+</td>
+<td>
+<div id="draggable" class="ui-widget-content">
+  <p>Dragable item 1</p>
+</div>
+</td>
+
+ <td>
+ <div id="draggable1" class="ui-widget-content">
+
+  <img src="pavan.jpg" draggable="true" width="150px" height="150px" />
+ </div>
+ </td>
+
+ <td>
+ <div id="draggable2" class="ui-widget-content">
+  <p>Dragable item 3</p>
+</div>
+</td>
+</tr>
+
+
+<tr bordercolor="#000000">
+<td>
+<div id="droppable3" >
+  <p>DROPPED ITEAM LIST</p>
+</div>
+</td>
+ <td>
+ <div id="droppable" class="ui-widget-content">
+
+</div>
+</td>
+
+<td>
+ <div id="droppable1" class="ui-widget-content">
+
+</div>
+</td>
+
+<td>
+ <div id="droppable2" class="ui-widget-content">
+
+</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
